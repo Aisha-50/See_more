@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Personal Page</title>
+</head>
+<body>
+  <img src="img/Profile pic.jpg" alt="Aisha"> <br>
+  <h2><b>Beverly Page</b></h2>
+  <p class="Intro">Hello, welcome to my page. My name is <b>Aisha Beverly Ahmed.</b></p><br>
+
+<div id="extraInfo">
+  <p>I am a professional web developer. <br>
+    My interest are reading, playing games, wactching films etc. <br>
+    i am an introvert by nature. <br>
+    You can contact me on <b>07058724072</b> </p>
+  </div>
+
+  <button id="btn" onclick="moreInfo()">See more</button>
+
+  <script>
+    function moreInfo() {
+      const content = document.getElementById("extraInfo");
+      const button = document.getElementById("btn");
+
+      if (content.style.display === "none") {
+        content.style.display = "block";
+        button.textContent = "See less";
+      } else {
+        content.style.display = "none";
+        button.textContent = "See more";
+      }
+    }
+  </script>
+</body>
+</html>
